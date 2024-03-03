@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>desafío js</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="contenedor">
+    <h1>Compra de producto</h1>
+    <div class="contenedor-producto">
+        <img src="assets/gsr1802.jpg520x520.r.jpg" alt="Imagen del producto">
+        <div class="contenido-adicional">
+            <p>Precio: <span class="precio"></span></p>
+            <p>Cantidad: <span class="cantidad"></span></p>
+            <div class="botones-compra">
+                <button onclick="
+                    precio = document.querySelector('.precio');
+                    cantidad = document.querySelector('.cantidad');
+                    nuevaCantidad = Number(cantidad.innerHTML) + 1;
+                    cantidad.innerHTML = nuevaCantidad;
+
+                    total = document.querySelector('.total');
+                    nuevoPrecio = Number(precio.innerHTML)*nuevaCantidad;
+                    total.innerHTML = nuevoPrecio;
+                ">sumar</button>
+
+                <button onclick="
+                    precio = document.querySelector('.precio');
+                    cantidad = document.querySelector('.cantidad');
+                    nuevaCantidad = Number(cantidad.innerHTML) - 1;
+                    cantidad.innerHTML = nuevaCantidad;
+
+                    total = document.querySelector('.total');
+                    nuevoPrecio = Number(precio.innerHTML)*nuevaCantidad;
+                    total.innerHTML = nuevoPrecio;
+                ">restar</button>
+            </div>
+        </div>
+    </div>
+
+    <p>Precio Total: <span class="total"></span></p>
+</div>
+
+<script src="script.js"></script>   
+</body>
+</html>
+<p>Diego, trate de hacer funcional lo pedido, lo demás se me hiso muy dificil sacarlo, me trave comletamente </p>

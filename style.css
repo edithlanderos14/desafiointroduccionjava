@@ -1,0 +1,27 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+.contenedor {
+    margin: 0 auto;
+    max-width: 600px;
+}
+
+.contenedor-producto {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.contenido-adicional {
+    margin-left: 20px;
+}
+
+.botones-compra button {
+    margin-top: 10px;
+}
+
+.total {
+    font-weight: bold;
+}
